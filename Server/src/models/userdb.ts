@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     username:{type:String,required:true},
     password:{type:String,required:true} //hased password
 },{timestamps:true}); //track createdAt,updatedAt
-
+ 
 const  tagSchema=new mongoose.Schema({
     title:{type:String,requirea:true,unique:true}
 },{timestamps:true});
